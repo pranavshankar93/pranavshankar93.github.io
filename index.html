@@ -1,1 +1,42 @@
-Hey
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Best™ of Pranav</title>
+    <meta name="description" content="Pranav is an opinionated guy, and we love him. This is a curated list of his opinions.">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/pranav.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/pranav.png">
+    <meta name="application-name" content="The Best™ of Pranav"/>
+    <meta name="msapplication-TileColor" content="#c5a379"/>
+    <meta name="msapplication-TileImage" content="/pranav.png"/>
+  </head>
+  <body>
+    <header>The Best™ of Pranav</header>
+    <img src="/pranav.png" alt="Headshot of Pranav">
+    <blockquote>
+      A quote from Pranav here.
+    </blockquote>
+  </body>
+  <script>
+    const quotes = [
+      "Eminem invented rap.",
+      "Initial D invented drifting.",
+      "Corona is the best beer.",
+      "The Corvette is just better value.",
+      "The street lamps go up with the draw bridge!",
+      "It's a scam!",
+      "Best restaurant in Chicago? QXY.",
+      "Best movie? Easy, it's Top Gun",
+    ];
+    const quoteEl = document.querySelector('blockquote');
+    quoteEl.innerHTML = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+  </script>
+</html>
