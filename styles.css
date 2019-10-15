@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|Lato&display=swap');
 
 html {
   display: grid;
@@ -24,9 +24,10 @@ header {
   grid-column: span 2;
   padding-right: 10px;
   font-size: 4rem;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Shrikhand', cursive;
   color: white;
-  box-shadow: 6px 5px;
+  /* box-shadow: 6px 5px; */
+  filter: drop-shadow(6px 6px 0 #c21703) drop-shadow(6px 6px 0 #d8460b) drop-shadow(6px 6px 0 #f5c600) drop-shadow(6px 6px 0 #007291);
 }
 
 img {
