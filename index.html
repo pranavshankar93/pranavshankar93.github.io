@@ -36,12 +36,35 @@
       "Best restaurant in Chicago? QXY.",
       "Best movie? Easy, it's Top Gun",
     ];
+
     const quoteEl = document.querySelector('blockquote');
 
-    quoteEl.innerHTML = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+    const selectQuote = () => {
+      quoteEl.innerHTML = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+    };
+
+    selectQuote();
+
+    // ----------------------------
+
+    const avatars = [
+      '/pranav.png',
+      '/ranger_pranav.png',
+    ];
+
+    const imgEl = document.querySelector('img');
+
+    const selectAvatar = () => {
+      imgEl.src = avatars[Math.floor(Math.random() * avatars.length)];
+    }
+
+    selectAvatar();
+
+    // ----------------------------
 
     document.onclick = () => {
-      quoteEl.innerHTML = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+      selectQuote();
+      selectAvatar();
     };
   </script>
 </html>
