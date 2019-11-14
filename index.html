@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>The Best™ of Pranav</header>
-    <img src="/pranav.png" alt="Headshot of Pranav">
+    <img src="/bday-boy.png" alt="Headshot of Pranav">
     <blockquote>
       A quote from Pranav here.
     </blockquote>
@@ -51,12 +51,13 @@
     const avatars = [
       '/pranav.png',
       '/ranger_pranav.png',
+      '/bday-boy.jpg',
     ];
 
     const imgEl = document.querySelector('img');
 
     const selectAvatar = () => {
-      imgEl.src = avatars[Math.floor(Math.random() * avatars.length)];
+      // imgEl.src = avatars[Math.floor(Math.random() * avatars.length)];
     }
 
     selectAvatar();
