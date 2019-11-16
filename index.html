@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>The Best™ of Pranav</header>
-    <img src="/bday-boy.png" alt="Headshot of Pranav">
+    <img src="/pranav.png" alt="Headshot of Pranav">
     <blockquote>
       A quote from Pranav here.
     </blockquote>
@@ -36,6 +36,7 @@
       "Best restaurant in Chicago? QXY.",
       "Best movie? Easy, it's Top Gun!",
       "You don't include the bar when you're lifting weights!",
+      "The best years of my life were 18 to 22.",
     ];
 
     const quoteEl = document.querySelector('blockquote');
@@ -51,13 +52,12 @@
     const avatars = [
       '/pranav.png',
       '/ranger_pranav.png',
-      '/bday-boy.jpg',
     ];
 
     const imgEl = document.querySelector('img');
 
     const selectAvatar = () => {
-      // imgEl.src = avatars[Math.floor(Math.random() * avatars.length)];
+      imgEl.src = avatars[Math.floor(Math.random() * avatars.length)];
     }
 
     selectAvatar();
